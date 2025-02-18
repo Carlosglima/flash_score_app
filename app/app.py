@@ -45,7 +45,7 @@ def home_page():
             df["estrategia"] = "sem entrada"  # Define um valor padrão
 
             df.loc[
-                #(df["DifAbs_HomeDraw"].between(1.8, 2.7)) &
+                (df["DifAbs_HomeDraw"].between(1.8, 2.7)) &
                 (df["A_D"].between(1.5, 2.4)) &
                 (df["Media_P_OASJ"].between(0.35, 0.45)) &
                 (df["Odd_Over05_FT"].between(1.01, 1.10)) &
